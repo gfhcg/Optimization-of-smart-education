@@ -1,0 +1,60 @@
+@high-green: rgb(58, 119, 85);
+@middle-green: rgb(126, 189, 71);
+@low-green: rgb(220, 237, 205);
+@font-green: rgb(34, 95, 52);
+@header-height: 40px;
+@header-line-height: 70px;
+
+.btn-with-bg (@url, @width, @height) {
+  background: @url no-repeat;
+  background-size: cover;
+  border-style: none;
+  width: @width;
+  height: @height;
+  cursor: pointer;
+}
+
+.antd-table-border-color(@color) {
+  & thead tr th {
+    border-left: 1px solid @color !important;
+    border-bottom: solid 1px @color !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+  }
+
+  & thead > tr:first-child > th {
+    border-top: solid 1px @color !important;
+  }
+
+  & thead > tr > th:last-child {
+    border-right: solid 1px @color !important;
+  }
+
+  & thead > tr > th:first-child {
+    border-left: solid 1px @color !important;
+  }
+
+  & tbody tr td {
+    border-left: 1px solid @color !important;
+    border-bottom: solid 1px @color !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+  }
+
+  & tbody > tr > td:last-child {
+    border-right: solid 1px @color !important;
+  }
+
+  & tbody > tr > td:first-child {
+    border-left: solid 1px @color !important;
+  }
+
+  & tfoot > tr > td {
+    border-left: solid 1px @color !important;
+    border-bottom: solid 1px @color !important;
+  }
+
+  & tfoot > tr > td:last-child {
+    border-right: solid 1px @color !important;
+  }
+}

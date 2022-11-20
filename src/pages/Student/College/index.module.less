@@ -1,0 +1,118 @@
+@import '../../../assets/style/common.less';
+
+@college-header-height: 100px;
+@footer-height: 20px;
+
+.container {
+  position: relative;
+  min-height: 100%;
+
+  & > main {
+    // margin-top: calc(@college-header-height);
+    min-height: calc(100vh - @header-height - @college-header-height - @footer-height);
+  }
+
+  & > footer {
+    height: 20px;
+    background-color: rgb(121, 180, 74);
+  }
+
+  .college-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    line-height: @college-header-height;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(121, 180, 74);
+    .hat-img {
+      width: 30px;
+      margin-left: 40px;
+    }
+
+    h5 {
+      display: inline-block;
+      margin: 0 0 0 10px;
+      color: @font-green;
+      font-weight: normal;
+    }
+  }
+}
+
+.college-rank {
+  & > main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  & > p {
+    flex: 1;
+    text-align: right;
+    color: rgb(127, 125, 126);
+  }
+}
+
+.college-time,
+.college-process,
+.college-experience {
+  margin-bottom: 30px;
+
+  header {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 0 0;
+
+    h2 {
+      display: inline-block;
+      margin: 0;
+      color: @font-green;
+      font-weight: 500;
+    }
+    img {
+      margin-left: 10px;
+      width: 30px;
+    }
+  }
+}
+
+.college-time main {
+  .bar-box {
+    display: flex;
+    height: 230px;
+    justify-content: space-evenly;
+  }
+}
+
+.college-process main {
+  .pie-box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .sentence-box {
+    background-image: url('assets/pic/student/college-process-sentence.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 260px auto 40px auto;
+    color: rgb(39, 133, 99);
+    font-size: 17px;
+    line-height: 25px;
+
+    & > div {
+      width: 90%;
+      margin: 35px 0;
+    }
+  }
+}
+
+.college-experience main {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}

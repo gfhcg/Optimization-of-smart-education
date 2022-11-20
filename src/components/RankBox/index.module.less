@@ -1,0 +1,67 @@
+.rank-box {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-top: 10px;
+
+  .pic {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+
+    div {
+      background-size: cover;
+      width: 25px;
+      height: 25px;
+    }
+
+    img {
+      margin-left: 5px;
+      width: 70px;
+    }
+  }
+
+  .desc {
+    h3 {
+      margin: 0 0 0 10px;
+      color: rgb(54, 54, 56);
+      font-weight: bold;
+    }
+
+    h4 {
+      max-width: 280px;
+      color: rgb(142, 142, 148);
+      font-size: 15px;
+      font-weight: normal;
+      margin: 4px 0 0 10px;
+    }
+  }
+
+  .cqupt-rate-rank {
+    margin: 0 0 0 auto;
+
+    & > div {
+      width: 270px;
+      display: flex;
+
+      h4 {
+        color: inherit; // 避免被antd默认的h4样式修改
+        font-weight: normal;
+        font-size: 17px;
+        margin: 10px 0 0 25px;
+      }
+    }
+  }
+
+  .rate-rank {
+    margin: 0 0 0 auto;
+    width: 110px;
+
+    h4 {
+      color: inherit; // 避免被antd默认的h4样式修改
+      font-weight: normal;
+      font-size: 17px;
+      margin: 10px 0 0 10px;
+    }
+  }
+}

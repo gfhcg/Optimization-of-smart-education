@@ -1,0 +1,52 @@
+@import '../../../assets/style/common.less';
+
+.container {
+  display: flex;
+  align-items: center;
+  background-color: @middle-green;
+  width: 100%;
+  height: calc(100vh - @header-height);
+
+  & > main {
+    position: relative;
+    height: 560px;
+    width: 100%;
+
+    .people-img {
+      margin: 100px 0 0 40px;
+      width: 450px;
+    }
+
+    .dialog-box {
+      position: absolute;
+      display: inline-block;
+      background-image: url('assets/pic/student/dialog.png');
+      background-size: cover;
+      top: 40px;
+      width: 480px;
+      height: 495px;
+      padding: 40px 20px;
+
+      h2 {
+        margin: 25px 0 0 80px;
+        color: @high-green;
+        font-size: 28px;
+      }
+
+      p {
+        color: @high-green;
+        width: 75%;
+        margin: 55px 0 0 80px;
+      }
+
+      button:nth-of-type(1) {
+        .btn-with-bg(url('assets/pic/student/welcome-begin.png'), 206px, 38px);
+        margin: 40px 0 0 145px;
+      }
+      button:nth-of-type(2) {
+        .btn-with-bg(url('assets/pic/student/previous-btn.png'), 205px, 38px);
+        margin: 40px 0 0 145px;
+      }
+    }
+  }
+}
